@@ -301,6 +301,12 @@ function show(){
 	var mail = document.getElementById("email").value;
 	sessionStorage.setItem("name",mail);
 }
+
+function show1(){
+	var mail2 = document.getElementById("email_2").value;
+	sessionStorage.setItem("name",mail2);
+}
+
 function reset() {
 	var forgot = document.getElementById("email_forgot").value;
 	if ( forgot == ""){
@@ -315,7 +321,13 @@ window.onload =function()
     {
 		var urmail=sessionStorage.getItem("name");
         document.getElementById("fmail").innerHTML=urmail;
-    }
+	}
+
+window.onload =function()
+    {
+		var urmail2=sessionStorage.getItem("name");
+        document.getElementById("fmail2").innerHTML=urmail2;
+	}
 
 
 
