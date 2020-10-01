@@ -300,12 +300,7 @@
 function show(){
 	var mail = document.getElementById("email").value;
 	sessionStorage.setItem("name",mail);
-	if ( mail == ""){
-		alert("Please fill your email and password to login");
-	}
-	else
-		window.location.replace("login_submit.html");
-	}
+}
 function reset() {
 	var forgot = document.getElementById("email_forgot").value;
 	if ( forgot == ""){
