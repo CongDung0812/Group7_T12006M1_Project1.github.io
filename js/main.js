@@ -305,7 +305,6 @@ function show(){
 	}
 	else
 		window.location.replace("login_submit.html");
-	return false;
 	}
 function reset() {
 	var forgot = document.getElementById("email_forgot").value;

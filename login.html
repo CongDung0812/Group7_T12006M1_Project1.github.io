@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>BagBag store</title>
 	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- GOOGLE WEB FONT -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
@@ -94,23 +95,31 @@
 				<div class="col-xl-6 col-lg-6 col-md-8">
 					<div class="box_account">
 						<h3 class="client">Already have an account ? Sign in</h3>
-						<div class="form">
-							<div class="form-group">
-								<input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
-							</div>
-							<div class="form-group">
-								<input type="password" class="form-control" name="password_in" id="password_in" value="" placeholder="Password*" required>
-							</div>
-							<div class="clearfix add_bottom_15">
-								<div class="checkboxes float-left">
-									<label class="container_check">Remember me
-										<input type="checkbox">
-										<span class="checkmark"></span>
-									</label>
+						<div class="form-container">
+
+							<form action="login_submit.html" class="was-validated" onsubmit="show()">
+								<div class="form-group">
+									<input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
+									<div class="valid-feedback">Valid.</div>
+									<div class="invalid-feedback">Please fill out this field.</div>
 								</div>
-								<div class="float-right"><a id="forgot" href="javascript:void(0);">Lost Password?</a></div>
-							</div>
-							<div class="text-center"><input type="submit" value="Log In" class="btn_1 full-width" onclick="show()">
+								<div class="form-group">
+									<input type="password" class="form-control" name="password_in" id="password_in" value="" placeholder="Password*"required>
+									<div class="valid-feedback">Valid.</div>
+   									<div class="invalid-feedback">Please fill out this field.</div>
+								</div>
+								<div class="clearfix add_bottom_15">
+									<div class="checkboxes float-left">
+										<label class="container_check">Remember me
+											<input type="checkbox">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="float-right"><a id="forgot" href="javascript:void(0);">Lost Password?</a></div>
+								</div>
+								<div class="text-center"><input type="submit" value="Log In" class="btn_1 full-width">
+							</form>
+							
 							</div>
 							<div id="forgot_pw">
 								<div class="form-group">
@@ -121,6 +130,7 @@
 						</div>
 					</div>
 				</div>
+				
 				<div class="col-xl-6 col-lg-6 col-md-8">
 					<div class="box_account">
 						<h3 class="new_client">New Client</h3> <small class="float-right pt-2">* Required Fields</small>
@@ -326,5 +336,9 @@
     <script src="js/main.js"></script>
 	<!-- SPECIFIC SCRIPTS -->
 	<script src="js/carousel-home.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
